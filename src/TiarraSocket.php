@@ -40,7 +40,6 @@ class Stream_Filter_TiarraSocket extends php_user_filter
                     $this->tiarra->noticeMessage($this->channel, $bucket->data);
                     break;
             }
-            echo $bucket->data, PHP_EOL, PHP_EOL;
 
             $consumed += $bucket->datalen;
             stream_bucket_append($out, $bucket);
